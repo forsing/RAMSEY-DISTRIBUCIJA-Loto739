@@ -13,9 +13,9 @@ os.environ.setdefault("OMP_NUM_THREADS", "1")
 import numpy as np
 
 
-DEFAULT_CSV = "/Users/4c/Desktop/GHQ/data/loto7_4696_k79.csv"
-# DEFAULT_CSV = "/Users/4c/Desktop/GHQ/data/loto7_4696_k79_loto_2970.csv"
-# DEFAULT_CSV = "/Users/4c/Desktop/GHQ/data/loto7_4696_k79_loto_plus_1726.csv"
+DEFAULT_CSV = "/data/loto7_4696_k79.csv"
+# DEFAULT_CSV = "/data/loto7_4696_k79_loto_2970.csv"
+# DEFAULT_CSV = "/data/loto7_4696_k79_loto_plus_1726.csv"
 
 PAIRS = np.array(list(itertools.combinations(range(7), 2)))
 TRIPLES = np.array(list(itertools.combinations(range(7), 3)))
@@ -405,7 +405,7 @@ if __name__ == "__main__":
 
 """
 RAMSEY-DISTRIBUCIJA V1
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4696_k79.csv
+CSV: /data/loto7_4696_k79.csv
 Broj kola: 4696
 Hronološka provera: 3756 kola za učenje, 940 za ocenu.
   stacionarni: negativni log-skor = 11.232880
@@ -434,7 +434,7 @@ Provereno 15,000,000/15,380,937
 
 Prag bojenja rastojanja: 12
 Provereno kombinacija: 15380937
-NEXT: 05 11 13 22 23 32 36
+NEXT: 05 x 13 y 23 z 36
 Distribucioni skor: 3.559873906
 Skor je kriterijum modela, nije verovatnoća izvlačenja.
 
@@ -443,7 +443,7 @@ Skor je kriterijum modela, nije verovatnoća izvlačenja.
 
 
 RAMSEY-DISTRIBUCIJA V1
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4696_k79_loto_2970.csv
+CSV: /data/loto7_4696_k79_loto_2970.csv
 Broj kola: 2970
 Hronološka provera: 2376 kola za učenje, 594 za ocenu.
   stacionarni: negativni log-skor = 11.144005
@@ -472,7 +472,7 @@ Provereno 15,000,000/15,380,937
 
 Prag bojenja rastojanja: 12
 Provereno kombinacija: 15380937
-NEXT: 07 12 13 22 24 32 35
+NEXT: 07 x 13 y 24 z 35
 Distribucioni skor: 3.503504985
 Skor je kriterijum modela, nije verovatnoća izvlačenja.
 
@@ -481,7 +481,7 @@ Skor je kriterijum modela, nije verovatnoća izvlačenja.
 
 
 RAMSEY-DISTRIBUCIJA V1
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4696_k79_loto_plus_1726.csv
+CSV: /data/loto7_4696_k79_loto_plus_1726.csv
 Broj kola: 1726
 Hronološka provera: 1380 kola za učenje, 346 za ocenu.
   stacionarni: negativni log-skor = 10.906058
@@ -510,7 +510,7 @@ Provereno 15,000,000/15,380,937
 
 Prag bojenja rastojanja: 12
 Provereno kombinacija: 15380937
-NEXT: 05 09 18 19 28 30 36
+NEXT: 05 x 18 y 28 z 36
 Distribucioni skor: 3.568669489
 Skor je kriterijum modela, nije verovatnoća izvlačenja.
 """
@@ -518,8 +518,6 @@ Skor je kriterijum modela, nije verovatnoća izvlačenja.
 
 
 """
-https://sciencespectrumu.com/hidden-structures-in-chaos-d68d18851ddf
-
 hipoteza inspirisana Ramzijevom teorijom
 
 Ramzijeva teorija kaže da se u dovoljno velikim strukturama, 
